@@ -10,26 +10,27 @@ require_once '/config/Database.php';
 
 class Model
 {
-
+    // get one record by query
     public function getOne($query)
     {
         try {
             $result = Database::prepare($query)->execute(array())->fetch();
         } catch (\PDOException $e) {
             echo "Database error: " . $e->getMessage();
-            die();
+            exit;
         }
         return $result;
     }
 
 
+    // get several records by query
     public function getAll($query)
     {
         try {
             $result = Database::prepare($query)->execute(array())->fetchAll();
         } catch (\PDOException $e) {
             echo "Database error: " . $e->getMessage();
-            die();
+            exit;
         }
         return $result;
     }

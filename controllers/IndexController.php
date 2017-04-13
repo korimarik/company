@@ -16,18 +16,20 @@ class IndexController
 
     public function getAllData()
     {
+        // get list of all departmensts
         $departmentModel = new Department();
         $department      = $departmentModel->getAllDepartments();
 
+        // get list of all employees
         $employeeModel   = new Employee();
         $employee        = $employeeModel->getAllEmployees();
 
-        $mod = new DepartmentEmployee();
-        $arr  = $mod->getEmployeeByDepartmentId(1);
-
+        // page title
         $this->title = 'Головна';
 
-        $contentPage = '/views/index/get-all-data.php';
-        require_once '/views/layout/main.php';
+        $contentPage = '/views/index/get-all-data.php'; // name of page file
+
+
+        require_once '/views/layout/main.php'; // require main layout file
     }
 }
