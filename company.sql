@@ -12,17 +12,17 @@
 -- Dumping data for table company.department: ~8 rows (approximately)
 /*!40000 ALTER TABLE `department` DISABLE KEYS */;
 INSERT IGNORE INTO `department` (`id`, `department_name`, `description`, `created_date`, `parent_department_id`) VALUES
-	(1, 'Administration', 'The chief executive officer, also called the company president, and any other managers involved in making decisions for the company are a part of the administration department. Businesses need managers to oversee employees and implement company directives created by the president. Managers also typically interview and hire new employees for the company.', '2017-04-12 17:15:09', NULL),
-	(2, 'Accounting', 'The accounting department handles the bookkeeping for a business during the fiscal year. All revenue, expenses and company equity are tracked by the accounting department and reported to the Internal Revenue Service at the end of the company\'s fiscal year. The accounting department also tracks accounts payable so that all clients are paid for services or products. Accountants typically prepare income statements, cash flow statements, general ledgers and balance sheets for the company.', '2017-04-12 17:15:09', NULL),
-	(3, 'Sales', 'Sales departments are needed in companies that sell retail or wholesale items to other businesses or consumers. Sales departments coordinate their sales force to build customer relationships, meet particular revenue goals and pitch new products. The sales force may use a "push" or a "pull" method for attracting customers. The pull method typically involves placing a salesman in a physical store to sell products. Sales departments using the push method usually instruct their sales force to call, email or visit prospective customers.', '2017-04-12 17:16:45', NULL),
-	(4, 'Accounting', 'The accounting department handles the bookkeeping for a business during the fiscal year. All revenue, expenses and company equity are tracked by the accounting department and reported to the Internal Revenue Service at the end of the company\'s fiscal year. The accounting department also tracks accounts payable so that all clients are paid for services or products. Accountants typically prepare income statements, cash flow statements, general ledgers and balance sheets for the company.', '2017-04-12 17:15:28', NULL),
-	(5, 'Administration', 'The chief executive officer, also called the company president, and any other managers involved in making decisions for the company are a part of the administration department. Businesses need managers to oversee employees and implement company directives created by the president. Managers also typically interview and hire new employees for the company.', '2017-04-12 17:16:45', NULL),
-	(6, 'Accounting', 'The accounting department handles the bookkeeping for a business during the fiscal year. All revenue, expenses and company equity are tracked by the accounting department and reported to the Internal Revenue Service at the end of the company\'s fiscal year. The accounting department also tracks accounts payable so that all clients are paid for services or products. Accountants typically prepare income statements, cash flow statements, general ledgers and balance sheets for the company.', '2017-04-12 17:16:45', NULL),
-	(7, 'Marketing and Advertising', 'The marketing and advertising department for a business is responsible for developing product packaging, pricing, and creative materials for informing potential customers of the company\'s offerings. Additionally, the department may conduct research to discover the needs of its customers. For example, a toy company\'s marketing and advertising department may design a pink box for a new doll, set the price at $14 -- based on price data research -- and advertise the doll in commercials set to air during Saturday morning cartoons.', '2017-04-12 17:16:45', NULL),
-	(8, 'Production', 'The production department orders inventory for production when needed, fulfills production orders specified by management and coordinates with the marketing and advertising department to make changes to products. If your company builds electric guitars, for example, you need a production department and staff that focuses solely on producing your guitars.', '2017-04-12 17:16:45', NULL);
+	(1, 'Департамент корпоративних продажів і категорійного менеджменту', 'Повна індивідуальностей та визначних особистостей команда продажів і категорійного менеджменту прагне до мети - зробити так, щоб споживачі частіше вибирали «Нестле»!', '2017-04-12 17:15:09', NULL),
+	(2, 'Маркетинг і маркетингові комунікації', 'Ми твердо переконані, що для створення надуспішного бренду або продукту недостатньо красивого логотипу, відмінної якості і прекрасного смаку. Потрібно ще щось, чого складно дати визначення. Назвемо це натхненням або особливим передбаченням. Якщо у вас є це натхнення, і ви можете зробити його частиною маркетингового міксу, ми знаємо, що станеться диво.', '2017-04-12 17:15:09', 2),
+	(3, 'Фінансовий департамент', 'Вибравши команду Фінансового департаменту для професійного розвитку, Ви зможете навчитися перевіряти і створювати звітність про успіхи і прибутковості наших Бізнесів, аналізувати стратегічні питання. Удосконалювати свої навички, працюючи в партнерських проектах, в центральному відділі або бізнес-підрозділі, здійснюючи планування або допомагаючи нашим структурам по всій Росії і СНД приймати рішення.', '2017-04-12 17:16:45', NULL),
+	(4, 'Департамент управління ланцюгами поставок', 'Компанія «Нестле» володіє однією з найскладніших систем поставок в світі. Кожен елемент ланцюжка поставок тісно пов\'язаний з іншими сферами, і це створює спільноту однодумців, істинний командний дух, завдяки якому кожен намагається з усіх сил, щоб допомогти іншим досягти успіху.', '2017-04-12 17:16:45', 8),
+	(5, 'Відділ персоналу', 'Ми робимо свій внесок у розвиток бізнесу шляхом розробки і реалізації стратегії розвитку персоналу для забезпечення стійкого зростання компанії. Відділ персоналу забезпечує послідовне застосування корпоративних принципів, політик, практик та інструментів, а також дотримання трудового законодавства.', '2017-04-12 17:16:45', NULL),
+	(6, 'Юридичний відділ', 'Компанія «Нестле» дотримується найвищих стандартів у своїй діяльності. Саме тому завдання юридичного департаменту ТОВ «Нестле Росія» - щоденне супровід бізнесу компанії, що відрізняється високою якістю і професіоналізмом.', '2017-04-13 09:46:58', NULL),
+	(7, 'Відділ корпоративних питань', 'Наша мета - створювати конкурентні переваги для «Нестле Росія» шляхом формування, підтримки та використання сприятливої ​​для компанії зовнішнього середовища, що сприяє зміцненню в очах громадськості цінностей компанії, її брендів, репутації, як відповідальної компанії і світового лідера в області правильного харчування та здорового способу життя . Департамент корпоративних питань складається з підрозділів по роботі із засобами масової інформації, органами державної влади та недержавними організаціями, а також включає напрями, пов\'язані з діяльністю у сфері корпоративної соціальної відповідальності та внутрішньокорпоративних комунікацій.', '2017-04-13 09:48:05', 1),
+	(8, 'Технічний Департамент', 'Якщо уявити, що компанія - це людський організм, то технічний департамент - це його серце і кровоносна система. Наше завдання - втілювати ідеї в життя. Технічний напрям компанії «Нестле» в Росії представлено Технічним відділом в головному офісі в Москві і 13-ма фабриками в Росії і СНД. Співробітники Технічного відділу в Москві надають експертну та методологічну підтримку фабрикам, ведуть значну координаційну роботу і виконують роль сполучної ланки між фабриками і різними підрозділами компанії.', '2017-04-13 09:49:07', NULL);
 /*!40000 ALTER TABLE `department` ENABLE KEYS */;
 
--- Dumping data for table company.department_employee: ~0 rows (approximately)
+-- Dumping data for table company.department_employee: ~23 rows (approximately)
 /*!40000 ALTER TABLE `department_employee` DISABLE KEYS */;
 INSERT IGNORE INTO `department_employee` (`id`, `department_id`, `employee_id`) VALUES
 	(1, 1, 1),
@@ -53,17 +53,17 @@ INSERT IGNORE INTO `department_employee` (`id`, `department_id`, `employee_id`) 
 -- Dumping data for table company.employee: ~11 rows (approximately)
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
 INSERT IGNORE INTO `employee` (`id`, `employee_name`, `gender`, `age`, `position_name`, `created_date`, `parent_employee_id`) VALUES
-	(1, 'Крупко Іван Петрович', 'чоловіча', 31, 'спеціаліст', '2017-04-12 17:36:54', NULL),
-	(2, 'Мельник Генадій Едуардович', 'чоловіча', 28, 'інженер 1 категорії', '2017-04-12 17:36:54', NULL),
+	(1, 'Крупко Іван Петрович', 'чоловіча', 31, 'спеціаліст', '2017-04-12 17:36:54', 4),
+	(2, 'Мельник Генадій Едуардович', 'чоловіча', 28, 'інженер 1 категорії', '2017-04-12 17:36:54', 9),
 	(3, 'Шевченко Петро Харитонович', 'чоловіча', 46, 'спеціаліст по нестандартним розробкам', '2017-04-12 17:36:54', NULL),
 	(4, 'Коваленко Ганна Павлівна', 'жіноча', 42, 'головний спеціаліст', '2017-04-12 17:36:54', NULL),
-	(5, 'Бондаренко Марина Дмитрівна', 'жіноча', 23, 'інженер 2 категорії', '2017-04-12 17:36:54', NULL),
-	(6, 'Ткаченко Ілля Сергійович', 'чоловіча', 34, 'спеціаліст', '2017-04-12 17:36:54', NULL),
-	(7, 'Ковальчук Ірина Максимівна', 'жіноча', 50, 'інженер 1 категорії', '2017-04-12 17:36:54', NULL),
+	(5, 'Бондаренко Марина Дмитрівна', 'жіноча', 23, 'інженер 2 категорії', '2017-04-12 17:36:54', 9),
+	(6, 'Ткаченко Ілля Сергійович', 'чоловіча', 34, 'спеціаліст', '2017-04-12 17:36:54', 4),
+	(7, 'Ковальчук Ірина Максимівна', 'жіноча', 50, 'інженер 1 категорії', '2017-04-12 17:36:54', 9),
 	(8, 'Кравченко Микола Пилипович', 'чоловіча', 40, 'працівник', '2017-04-12 17:36:54', NULL),
-	(9, 'Олійник Любов Миколаївна', 'жіноча', 37, 'головний спеціаліст', '2017-04-12 17:36:54', NULL),
-	(10, 'Шевчук Ольга Сергіївна', 'жіноча', 40, 'інженер 1 категорії', '2017-04-12 17:36:54', NULL),
-	(11, 'Бойко Сергій Анатолійович', 'чоловіча', 38, 'інженер 2 категорії', '2017-04-12 17:36:54', NULL);
+	(9, 'Олійник Любов Миколаївна', 'жіноча', 37, 'головний інженер', '2017-04-12 17:36:54', NULL),
+	(10, 'Шевчук Ольга Сергіївна', 'жіноча', 40, 'інженер 1 категорії', '2017-04-12 17:36:54', 9),
+	(11, 'Бойко Сергій Анатолійович', 'чоловіча', 38, 'працівник', '2017-04-12 17:36:54', NULL);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
