@@ -6,6 +6,22 @@
  * Time: 10:21
  */
 
+?>
+    <labele>Співробітники:</labele>
+    <select id="employees" name="employees">
+        <?php foreach($allEmployees as $item) { ?>
+            <option <?php
+            if($id == $item['id']) {
+                echo ' selected';
+            }
+        ?> value="<?= $item['id']; ?>"><?= $item['employee_name']; ?></option>
+        <?php } ?>
+    </select>
+    <br />
+    <br />
+
+<?php
+
 if (isset($infoEmployee['employee_name'])) {
     ?>
     <table>
@@ -72,3 +88,11 @@ if (isset($infoEmployee['employee_name'])) {
     <?php
 }
 ?>
+
+<script>
+    // handler of <select> changing
+    document.getElementById("employees").addEventListener("change", function() {
+        var id = this.value; // get selected id
+        window.location = '/?c=item&a=employee&id=' + id; // redirect to page with new employee id
+    });
+</script>

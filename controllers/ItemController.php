@@ -27,6 +27,9 @@ class ItemController
         $modelDepartment = new Department();
         $infoDepartment = $modelDepartment->getOneDepartment($id); // information about department
 
+        $allDepartments = $modelDepartment->getAllDepartments(); // get list of all departmensts
+
+
         $childDepartmentList = $modelDepartment->getChildDepartments($id); // list of department's child departments
 
         $modelDepartmentEmployee = new DepartmentEmployee();
@@ -57,6 +60,8 @@ class ItemController
 
         $modelEmployee = new Employee();
         $infoEmployee = $modelEmployee->getOneEmployee($id); // information about employee
+
+        $allEmployees = $modelEmployee->getAllEmployees(); // get list of all employees
 
         $childEmployeeList = $modelEmployee->getChildEmployees($id); // list of employee's child employees
 

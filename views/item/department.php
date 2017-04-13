@@ -6,6 +6,21 @@
  * Time: 10:21
  */
 
+?>
+<labele>Відділи:</labele>
+<select id="departments" name="departments">
+    <?php foreach($allDepartments as $item) { ?>
+    <option <?php
+    if($id == $item['id']) {
+        echo ' selected';
+    }
+    ?> value="<?= $item['id']; ?>"><?= $item['department_name']; ?></option>
+    <?php } ?>
+</select>
+<br />
+<br />
+
+<?php
 if (isset($infoDepartment['department_name'])) {
     ?>
     <table>
@@ -67,3 +82,10 @@ if (isset($infoDepartment['department_name'])) {
     <?php
 }
 ?>
+<script>
+    // handler of <select> changing
+    document.getElementById("departments").addEventListener("change", function() {
+        var id = this.value; // get selected id
+        window.location = '/?c=item&a=department&id=' + id; // redirect to page with new department id
+    });
+</script>
